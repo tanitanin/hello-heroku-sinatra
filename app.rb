@@ -9,3 +9,7 @@ get "/style.css" do
   content_type 'text/css', :charset => 'utf-8'
   scss :style
 end
+
+get "/script.js" do
+  coffee :script
+end
